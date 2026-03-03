@@ -73,19 +73,19 @@ export default function ContactPage() {
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/90" />
+          <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/60 to-black/90" />
         </div>
 
         <div className="relative z-10 text-center px-8 max-w-5xl mx-auto">
           <div ref={titleRef}>
             <p className="text-[#D32F23] uppercase tracking-[0.5em] text-sm font-medium mb-8">
-              Rooftop · I-8 Markaz, Islamabad
+              Rooftop · Islamabad
             </p>
-            <h1 className="text-[80px] sm:text-[120px] md:text-[160px] font-black text-white leading-none">
+            <h1 className="text-[70px] sm:text-[100px] md:text-[140px] font-black text-white leading-none font-display uppercase tracking-wide">
               Visit Us
             </h1>
-            <p className="mt-10 text-gray-300 text-2xl max-w-2xl mx-auto leading-relaxed font-light">
-              Reserve your table or reach out — we&apos;d love to host you on our rooftop
+            <p className="mt-10 text-gray-300 text-xl sm:text-2xl max-w-2xl mx-auto leading-relaxed font-light">
+              Reserve your table for an elevated dining experience above the Islamabad skyline
             </p>
           </div>
         </div>
@@ -102,28 +102,28 @@ export default function ContactPage() {
       {/* ================================================================
           CONTACT INFO + FORM — Side by side, wide
       ================================================================ */}
-      <section className="w-full bg-black py-40">
-        <div className="max-w-[1600px] mx-auto px-12 lg:px-24">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 xl:gap-32">
+      <section className="w-full bg-black py-48 md:py-56">
+        <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-32">
 
             {/* LEFT — Info */}
             <AnimatedSection animation="fadeLeft">
-              <div className="space-y-14">
+              <div className="space-y-16">
                 <div>
                   <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">
                     Contact Information
                   </span>
-                  <h2 className="mt-6 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-tight">
+                  <h2 className="mt-8 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-tight">
                     Come Find<br />Us
                   </h2>
-                  <div className="mt-8 w-20 h-1 bg-[#D32F23]" />
-                  <p className="mt-10 text-gray-400 text-xl leading-loose">
+                  <div className="mt-10 w-20 h-1 bg-[#D32F23]" />
+                  <p className="mt-12 text-gray-400 text-xl leading-[1.9]">
                     Enjoy a one-of-a-kind rooftop dining experience in the heart of I-8 Markaz, Islamabad.
                     Whether it&apos;s a family dinner or a special celebration, Mastara is your destination.
                   </p>
                 </div>
 
-                <div className="space-y-10">
+                <div className="space-y-12">
                   {[
                     {
                       icon: (
@@ -163,19 +163,19 @@ export default function ContactPage() {
                       value: "Mon – Thu: 12 PM – 12 AM\nFri – Sun: 12 PM – 1 AM",
                     },
                   ].map((item) => (
-                    <div key={item.label} className="flex items-start gap-8 group">
-                      <div className="w-16 h-16 bg-[#D32F23]/15 flex items-center justify-center flex-shrink-0 text-[#D32F23] group-hover:bg-[#D32F23] group-hover:text-white transition-all duration-300">
+                    <div key={item.label} className="flex items-start gap-7 sm:gap-8 group">
+                      <div className="w-14 h-14 sm:w-16 sm:h-16 bg-[#D32F23]/15 flex items-center justify-center shrink-0 text-[#D32F23] group-hover:bg-[#D32F23] group-hover:text-white transition-all duration-300">
                         {item.icon}
                       </div>
                       <div>
-                        <div className="text-[#D32F23] text-xs font-black uppercase tracking-wider mb-2">{item.label}</div>
-                        <p className="text-gray-300 text-lg leading-loose whitespace-pre-line">{item.value}</p>
+                        <div className="text-[#D32F23] text-xs font-black uppercase tracking-wider mb-3">{item.label}</div>
+                        <p className="text-gray-300 text-lg leading-[1.8] whitespace-pre-line">{item.value}</p>
                       </div>
                     </div>
                   ))}
                 </div>
 
-                <div className="flex items-center gap-5 pt-4">
+                <div className="flex items-center gap-5 pt-6">
                   {[
                     { label: "Facebook", path: "M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" },
                     { label: "Instagram", path: "M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" },
@@ -193,18 +193,18 @@ export default function ContactPage() {
 
             {/* RIGHT — Form */}
             <AnimatedSection animation="fadeRight">
-              <div className="bg-[#0a0a0a] border border-white/10 p-12 lg:p-16">
-                <h3 className="text-3xl font-black text-white mb-10">Make a Reservation</h3>
+              <div className="bg-[#0a0a0a] border border-white/10 p-6 sm:p-10 lg:p-12 xl:p-14">
+                <h3 className="text-2xl sm:text-3xl font-black text-white mb-8 sm:mb-10 lg:mb-12">Make a Reservation</h3>
 
                 {submitted ? (
-                  <div className="text-center py-20">
-                    <div className="w-24 h-24 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-8">
+                  <div className="text-center py-24">
+                    <div className="w-24 h-24 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-10">
                       <svg className="w-12 h-12 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <h4 className="text-3xl font-black text-white mb-4">Thank You!</h4>
-                    <p className="text-gray-400 text-lg mb-10">
+                    <h4 className="text-3xl font-black text-white mb-5">Thank You!</h4>
+                    <p className="text-gray-400 text-lg mb-12 leading-relaxed">
                       Your reservation has been submitted. We&apos;ll confirm shortly.
                     </p>
                     <button
@@ -215,31 +215,31 @@ export default function ContactPage() {
                     </button>
                   </div>
                 ) : (
-                  <form ref={formRef} onSubmit={handleSubmit} className="space-y-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <form ref={formRef} onSubmit={handleSubmit} className="space-y-7">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="form-field">
-                        <label className="block text-xs font-black text-gray-500 uppercase tracking-widest mb-3">Full Name *</label>
+                        <label className="block text-xs font-black text-gray-500 uppercase tracking-widest mb-4">Full Name *</label>
                         <input type="text" name="name" value={formData.name} onChange={handleChange} required
                           className="w-full px-6 py-5 bg-black border border-white/15 text-white text-lg placeholder-gray-600 focus:border-[#D32F23] focus:outline-none transition-colors"
                           placeholder="Your name" />
                       </div>
                       <div className="form-field">
-                        <label className="block text-xs font-black text-gray-500 uppercase tracking-widest mb-3">Email *</label>
+                        <label className="block text-xs font-black text-gray-500 uppercase tracking-widest mb-4">Email *</label>
                         <input type="email" name="email" value={formData.email} onChange={handleChange} required
                           className="w-full px-6 py-5 bg-black border border-white/15 text-white text-lg placeholder-gray-600 focus:border-[#D32F23] focus:outline-none transition-colors"
                           placeholder="your@email.com" />
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="form-field">
-                        <label className="block text-xs font-black text-gray-500 uppercase tracking-widest mb-3">Phone *</label>
+                        <label className="block text-xs font-black text-gray-500 uppercase tracking-widest mb-4">Phone *</label>
                         <input type="tel" name="phone" value={formData.phone} onChange={handleChange} required
                           className="w-full px-6 py-5 bg-black border border-white/15 text-white text-lg placeholder-gray-600 focus:border-[#D32F23] focus:outline-none transition-colors"
                           placeholder="+92 300 1234567" />
                       </div>
                       <div className="form-field">
-                        <label className="block text-xs font-black text-gray-500 uppercase tracking-widest mb-3">Guests *</label>
+                        <label className="block text-xs font-black text-gray-500 uppercase tracking-widest mb-4">Guests *</label>
                         <select name="guests" value={formData.guests} onChange={handleChange} required
                           className="w-full px-6 py-5 bg-black border border-white/15 text-white text-lg focus:border-[#D32F23] focus:outline-none transition-colors">
                           <option value="">Select guests</option>
@@ -251,14 +251,14 @@ export default function ContactPage() {
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="form-field">
-                        <label className="block text-xs font-black text-gray-500 uppercase tracking-widest mb-3">Date *</label>
+                        <label className="block text-xs font-black text-gray-500 uppercase tracking-widest mb-4">Date *</label>
                         <input type="date" name="date" value={formData.date} onChange={handleChange} required
                           className="w-full px-6 py-5 bg-black border border-white/15 text-white text-lg focus:border-[#D32F23] focus:outline-none transition-colors" />
                       </div>
                       <div className="form-field">
-                        <label className="block text-xs font-black text-gray-500 uppercase tracking-widest mb-3">Time *</label>
+                        <label className="block text-xs font-black text-gray-500 uppercase tracking-widest mb-4">Time *</label>
                         <select name="time" value={formData.time} onChange={handleChange} required
                           className="w-full px-6 py-5 bg-black border border-white/15 text-white text-lg focus:border-[#D32F23] focus:outline-none transition-colors">
                           <option value="">Select time</option>
@@ -270,7 +270,7 @@ export default function ContactPage() {
                     </div>
 
                     <div className="form-field">
-                      <label className="block text-xs font-black text-gray-500 uppercase tracking-widest mb-3">Special Requests</label>
+                      <label className="block text-xs font-black text-gray-500 uppercase tracking-widest mb-4">Special Requests</label>
                       <textarea name="message" value={formData.message} onChange={handleChange} rows={5}
                         className="w-full px-6 py-5 bg-black border border-white/15 text-white text-lg placeholder-gray-600 focus:border-[#D32F23] focus:outline-none transition-colors resize-none"
                         placeholder="Dietary requirements, occasion, seating preference..." />
@@ -300,18 +300,18 @@ export default function ContactPage() {
       {/* ================================================================
           MAP — Full-width wide
       ================================================================ */}
-      <section className="w-full bg-[#080808] py-40">
-        <div className="max-w-[1600px] mx-auto px-12 lg:px-24">
-          <AnimatedSection animation="fadeUp" className="text-center mb-20">
+      <section className="w-full bg-[#080808] py-48 md:py-56">
+        <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24">
+          <AnimatedSection animation="fadeUp" className="text-center mb-24 md:mb-28">
             <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">Find Us</span>
-            <h2 className="mt-8 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none">
+            <h2 className="mt-10 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none">
               Our Location
             </h2>
-            <div className="mt-10 w-24 h-1 bg-[#D32F23] mx-auto" />
+            <div className="mt-12 w-24 h-1 bg-[#D32F23] mx-auto" />
           </AnimatedSection>
 
           <AnimatedSection animation="scaleUp">
-            <div className="relative w-full h-[600px] overflow-hidden border border-white/10">
+            <div className="relative w-full h-[500px] md:h-[600px] overflow-hidden border border-white/10">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.0!2d73.0879!3d33.6844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6789f3d5d8b33b08!2sI-8%20Markaz%2C%20Islamabad!5e0!3m2!1sen!2spk!4v1234567890"
                 width="100%"
@@ -322,18 +322,18 @@ export default function ContactPage() {
                 referrerPolicy="no-referrer-when-downgrade"
                 className="grayscale contrast-125 opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
               />
-              <div className="absolute bottom-8 left-8 bg-black/95 border border-white/10 p-8 max-w-sm">
-                <div className="text-[#D32F23] text-xs font-black uppercase tracking-widest mb-3">Mastara Restaurant</div>
-                <h3 className="text-xl font-black text-white mb-2">Rooftop, I-8 Markaz</h3>
-                <p className="text-gray-400">Islamabad, Pakistan</p>
+              <div className="absolute bottom-4 left-4 sm:bottom-8 sm:left-8 bg-black/95 border border-white/10 p-5 sm:p-6 lg:p-8 max-w-xs sm:max-w-sm">
+                <div className="text-[#D32F23] text-[10px] sm:text-xs font-black uppercase tracking-widest mb-3 sm:mb-4">Mastara Restaurant</div>
+                <h3 className="text-lg sm:text-xl font-black text-white mb-2 sm:mb-3">Rooftop, I-8 Markaz</h3>
+                <p className="text-gray-400 text-sm sm:text-base">Islamabad, Pakistan</p>
                 <a
                   href="https://maps.google.com/?q=I-8+Markaz+Islamabad"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 mt-5 text-[#D32F23] font-bold hover:text-[#E54A3F] transition-colors"
+                  className="inline-flex items-center gap-2 mt-4 sm:mt-6 text-[#D32F23] font-bold text-sm sm:text-base hover:text-[#E54A3F] transition-colors"
                 >
                   Get Directions
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </a>
@@ -347,17 +347,17 @@ export default function ContactPage() {
       {/* ================================================================
           FAQ — Wide spacious grid
       ================================================================ */}
-      <section className="w-full bg-black py-40">
-        <div className="max-w-[1600px] mx-auto px-12 lg:px-24">
-          <AnimatedSection animation="fadeUp" className="text-center mb-24">
+      <section className="w-full bg-black py-48 md:py-56">
+        <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24">
+          <AnimatedSection animation="fadeUp" className="text-center mb-28 md:mb-32">
             <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">FAQ</span>
-            <h2 className="mt-8 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none">
+            <h2 className="mt-10 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none">
               Common Questions
             </h2>
-            <div className="mt-10 w-24 h-1 bg-[#D32F23] mx-auto" />
+            <div className="mt-12 w-24 h-1 bg-[#D32F23] mx-auto" />
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {[
               { q: "Do you accept walk-ins?", a: "Yes! Walk-ins are welcome on our rooftop. However, reservations are recommended on weekends and holidays for guaranteed seating." },
               { q: "Is parking available?", a: "Yes, complimentary valet parking is available at the I-8 Markaz entrance. Self-parking is also available nearby." },
@@ -367,9 +367,9 @@ export default function ContactPage() {
               { q: "Do you offer home delivery?", a: "Yes, we deliver through popular apps. Online ordering directly from our website will be available soon." },
             ].map((faq, index) => (
               <AnimatedSection key={faq.q} animation="fadeUp" delay={index * 0.08}>
-                <div className="bg-[#0a0a0a] border border-white/10 p-10 hover:border-[#D32F23]/40 transition-colors duration-300 h-full">
-                  <h3 className="text-xl font-black text-white mb-5">{faq.q}</h3>
-                  <p className="text-gray-400 leading-loose text-lg">{faq.a}</p>
+                <div className="bg-[#0a0a0a] border border-white/10 p-8 sm:p-10 lg:p-12 hover:border-[#D32F23]/40 transition-colors duration-300 h-full">
+                  <h3 className="text-xl font-black text-white mb-6">{faq.q}</h3>
+                  <p className="text-gray-400 leading-[1.85] text-lg">{faq.a}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -381,7 +381,7 @@ export default function ContactPage() {
       {/* ================================================================
           FINAL CTA
       ================================================================ */}
-      <section className="relative w-full py-48">
+      <section className="relative w-full py-48 md:py-56">
         <div className="absolute inset-0">
           <Image
             src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1"
@@ -393,12 +393,12 @@ export default function ContactPage() {
         </div>
         <div className="relative z-10 text-center px-8">
           <AnimatedSection animation="scaleUp">
-            <h2 className="text-6xl lg:text-8xl xl:text-[120px] font-black text-white leading-none mb-16">
+            <h2 className="text-6xl lg:text-8xl xl:text-[120px] font-black text-white leading-none mb-20">
               See You on<br />the Rooftop
             </h2>
             <a
               href="tel:+925112345678"
-              className="inline-block px-20 py-7 bg-black text-white text-xl font-black uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-300"
+              className="inline-block px-16 sm:px-20 py-7 bg-black text-white text-lg sm:text-xl font-black uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-300"
             >
               Call Now
             </a>

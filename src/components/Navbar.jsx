@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import gsap from "gsap";
 
@@ -91,10 +92,15 @@ export default function Navbar() {
     >
       <div className="w-full max-w-[1600px] mx-auto px-12 lg:px-24">
         <div className="flex items-center justify-between h-28">
-          <Link href="/" ref={logoRef} className="flex items-center gap-3 group">
-            <span className="text-4xl font-bold italic text-[#D32F23] group-hover:text-[#E54A3F] transition-colors duration-300">
-              Mastara
-            </span>
+          <Link href="/" ref={logoRef} className="flex items-center group">
+            <Image
+              src="/logo/Mastara__7___2_-removebg-preview.png"
+              alt="Mastara"
+              width={180}
+              height={60}
+              className="h-12 sm:h-14 md:h-16 lg:h-18 w-auto object-contain group-hover:opacity-80 transition-opacity duration-300"
+              priority
+            />
           </Link>
 
           <div className="hidden md:flex items-center gap-4">
@@ -150,13 +156,13 @@ export default function Navbar() {
           ref={mobileMenuRef}
           className="md:hidden bg-black/95 backdrop-blur-lg border-t border-white/10"
         >
-          <div className="px-8 py-8 space-y-4">
+          <div className="px-6 sm:px-8 py-8 sm:py-10 space-y-3 sm:space-y-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`block px-6 py-4 text-xl font-medium uppercase tracking-wider transition-all duration-300 border-l-2 ${
+                className={`block px-5 sm:px-6 py-4 sm:py-5 text-lg sm:text-xl font-medium uppercase tracking-wider transition-all duration-300 border-l-2 ${
                   pathname === link.href
                     ? "text-[#D32F23] border-[#D32F23] bg-white/5"
                     : "text-white border-transparent hover:border-[#D32F23] hover:text-[#D32F23] hover:bg-white/5"

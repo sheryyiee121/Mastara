@@ -23,6 +23,11 @@
   --color-mastara-gray: var(--mastara-gray);
   --color-mastara-gray-light: var(--mastara-gray-light);
   --font-sans: var(--font-raleway), sans-serif;
+  --font-display: var(--font-display), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
 }
 
 * {
@@ -139,4 +144,22 @@ body {
 .mask-fade-bottom {
   mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-container:hover .animate-marquee {
+  animation-play-state: paused;
 }
