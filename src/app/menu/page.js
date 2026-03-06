@@ -156,8 +156,8 @@ export default function MenuPage() {
       {/* ================================================================
           STICKY CATEGORY TABS
       ================================================================ */}
-      <div className="sticky top-0 z-40 bg-black/95 backdrop-blur-lg border-b border-white/10">
-        <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24">
+      <div className="sticky top-0 z-40 bg-black/95 backdrop-blur-lg border-b border-white/10" style={{ marginTop: "10px" }}>
+        <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24" >
           <div className="flex items-center justify-center gap-2 md:gap-3 py-6 md:py-7">
             {Object.entries(menuCategories).map(([key, cat]) => (
               <button
@@ -181,11 +181,11 @@ export default function MenuPage() {
           MENU ITEMS SECTION
       ================================================================ */}
       <section className="w-full bg-[#080808] py-40 md:py-48">
-        <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24">
+        <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24" style={{ marginTop: "20px" }}>
           <AnimatedSection animation="fadeUp" className="mb-24 md:mb-28">
             <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-10">
-              <div>
-                <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">
+              <div className="relative left-6 sm:left-8 lg:left-10"> 
+                <span className="block text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black" style={{ marginTop: "30px" }}>
                   {currentMenu.tagline}
                 </span>
                 <h2 className="mt-5 text-5xl lg:text-6xl xl:text-7xl font-black text-white">
@@ -193,8 +193,8 @@ export default function MenuPage() {
                 </h2>
                 <div className="mt-8 w-20 h-1 bg-[#D32F23]" />
               </div>
-              <div className="flex flex-wrap items-center gap-6 lg:gap-8 text-sm">
-                <div className="flex items-center gap-3 text-gray-400">
+              <div className="flex flex-wrap items-center gap-6 lg:gap-8 text-sm" >
+                <div className="flex items-center gap-3 text-gray-400" >
                   <span className="w-4 h-4 bg-[#D32F23] rounded-full" />
                   <span>Spicy</span>
                 </div>
@@ -214,35 +214,34 @@ export default function MenuPage() {
             </div>
           </AnimatedSection>
 
-          <div ref={menuRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div ref={menuRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8" style={{ marginTop: "20px" }}>
             {currentMenu.items.map((item) => (
               <div
                 key={item.name}
-                className="menu-item group bg-black border border-white/10 overflow-hidden hover:border-[#D32F23]/40 transition-all duration-500"
+                className="menu-item group bg-black border border-white/10 overflow-hidden rounded-2xl sm:rounded-3xl hover:border-[#D32F23]/40 transition-all duration-500"
               >
-                <div className="relative h-56 sm:h-64 overflow-hidden">
+                <div className="relative h-56 sm:h-64 overflow-hidden rounded-t-2xl sm:rounded-t-3xl">
                   <Image
                     src={item.image}
                     alt={item.name}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
+                  <div className="absolute inset-0 rounded-t-2xl sm:rounded-t-3xl bg-linear-to-t from-black/80 via-black/20 to-transparent" />
                   <div className="absolute top-4 left-4 sm:top-5 sm:left-5 flex gap-1.5 sm:gap-2">
                     {item.spicy && <span className="w-6 h-6 sm:w-7 sm:h-7 bg-[#D32F23] rounded-full flex items-center justify-center text-white text-[10px] sm:text-xs font-black">🌶</span>}
                     {item.vegetarian && <span className="w-6 h-6 sm:w-7 sm:h-7 bg-green-500 rounded-full flex items-center justify-center text-white text-[10px] sm:text-xs">V</span>}
                     {item.popular && <span className="w-6 h-6 sm:w-7 sm:h-7 bg-yellow-500 rounded-full flex items-center justify-center text-white text-[10px] sm:text-xs">★</span>}
                     {item.chef && <span className="w-6 h-6 sm:w-7 sm:h-7 bg-purple-500 rounded-full flex items-center justify-center text-white text-[10px] sm:text-xs">✦</span>}
                   </div>
-                  <div className="absolute bottom-4 right-4 sm:bottom-5 sm:right-5 bg-black/60 backdrop-blur-sm px-3 py-1.5 sm:px-4 sm:py-2">
-                    <span className="text-xl sm:text-2xl font-black text-[#D32F23]">{item.price}</span>
-                  </div>
                 </div>
                 <div className="p-6 sm:p-8 lg:p-10 border-t border-white/5">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-white mb-3 sm:mb-4 group-hover:text-[#D32F23] transition-colors duration-300">
-                    {item.name}
-                  </h3>
-                  <p className="text-gray-400 text-sm sm:text-base leading-[1.8]">{item.description}</p>
+                  <div style={{ marginLeft: "22px" }}>
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-white mb-3 sm:mb-4 group-hover:text-[#D32F23] transition-colors duration-300">
+                      {item.name}
+                    </h3>
+                    <p className="text-gray-400 text-sm sm:text-base leading-[1.8]">{item.description}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -266,17 +265,16 @@ export default function MenuPage() {
         </div>
 
         <div className="relative z-10 max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24">
-          <AnimatedSection animation="fadeUp" className="text-center mb-28 md:mb-32">
+          <AnimatedSection animation="fadeUp" className="text-center mb-28 md:mb-32" style={{ marginTop: "30px" }}>
             <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">
               Good to Know
             </span>
-            <h2 className="mt-10 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none">
+            <h2 className="mt-10 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none" style={{ marginTop: "20px" }}>
               Dietary Options
             </h2>
-            <div className="mt-12 w-24 h-1 bg-[#D32F23] mx-auto" />
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10" style={{ marginTop: "30px" }}>
             {[
               {
                 title: "100% Halal",
@@ -315,17 +313,19 @@ export default function MenuPage() {
       <section className="w-full bg-[#D32F23] py-48 md:py-56">
         <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24 text-center">
           <AnimatedSection animation="scaleUp">
-            <h2 className="text-6xl lg:text-8xl xl:text-[120px] font-black text-white leading-none mb-20">
+            <h2 className="text-6xl lg:text-8xl xl:text-[100px] font-black text-white leading-none mb-20" style={{ marginTop: "30px" }}>
               Can&apos;t Decide?
             </h2>
-            <p className="text-white/80 text-xl sm:text-2xl max-w-3xl mx-auto leading-[1.85] mb-20">
-              Let our expert chefs craft a custom menu for your private event or party.
-              Experience the best of Pakistani hospitality.
-            </p>
+            <div className="w-full flex justify-center mb-20">
+              <p className="text-white/80 text-xl sm:text-2xl max-w-3xl leading-[1.85] text-center" style={{ textAlign: "center", width: "100%" }}>
+                Let our expert chefs craft a custom menu for your private event or party.
+                Experience the best of Pakistani hospitality.
+              </p>
+            </div>
             <a
               href="/contact"
               className="inline-block px-16 sm:px-20 py-7 bg-black text-white text-lg sm:text-xl font-black uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-300"
-            >
+              style={{ marginTop: "20px" }}>
               Request Custom Menu
             </a>
           </AnimatedSection>

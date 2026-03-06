@@ -90,20 +90,20 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="w-full max-w-[1600px] mx-auto px-12 lg:px-24">
-        <div className="flex items-center justify-between h-28">
-          <Link href="/" ref={logoRef} className="flex items-center group">
+      <div className="w-full max-w-[1400px] mx-auto px-6">
+        <div className="flex items-center justify-between h-28 px-6 lg:px-16">
+          <Link href="/" ref={logoRef} className="inline-flex items-center group" style={{ marginLeft: "70px" }}>
             <Image
               src="/logo/Mastara__7___2_-removebg-preview.png"
               alt="Mastara"
-              width={180}
-              height={60}
-              className="h-12 sm:h-14 md:h-16 lg:h-18 w-auto object-contain group-hover:opacity-80 transition-opacity duration-300"
+              width={200}
+              height={200}
+              className="object-contain group-hover:opacity-80 transition-opacity duration-300"
               priority
             />
           </Link>
 
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link, index) => (
               <Link
                 key={link.href}
@@ -177,3 +177,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+

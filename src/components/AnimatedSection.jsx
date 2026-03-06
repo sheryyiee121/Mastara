@@ -12,6 +12,7 @@ export default function AnimatedSection({
   delay = 0,
   duration = 1,
   stagger = 0.1,
+  ...rest
 }) {
   const sectionRef = useRef(null);
 
@@ -81,7 +82,7 @@ export default function AnimatedSection({
   }, [animation, delay, duration]);
 
   return (
-    <div ref={sectionRef} className={className}>
+    <div ref={sectionRef} className={className} {...rest}>
       {children}
     </div>
   );

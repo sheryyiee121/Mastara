@@ -103,18 +103,18 @@ export default function ContactPage() {
           CONTACT INFO + FORM — Side by side, wide
       ================================================================ */}
       <section className="w-full bg-black py-48 md:py-56">
-        <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24">
+        <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24" style={{ marginTop: "50px" }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-32">
 
             {/* LEFT — Info */}
             <AnimatedSection animation="fadeLeft">
-              <div className="space-y-16">
-                <div>
-                  <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">
+              <div className="space-y-16" style={{ marginLeft: "50px" }}>
+                <div >
+                  <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black text-center">
                     Contact Information
                   </span>
                   <h2 className="mt-8 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-tight">
-                    Come Find<br />Us
+                    Come Find Us
                   </h2>
                   <div className="mt-10 w-20 h-1 bg-[#D32F23]" />
                   <p className="mt-12 text-gray-400 text-xl leading-[1.9]">
@@ -302,16 +302,16 @@ export default function ContactPage() {
       ================================================================ */}
       <section className="w-full bg-[#080808] py-48 md:py-56">
         <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24">
-          <AnimatedSection animation="fadeUp" className="text-center mb-24 md:mb-28">
+          <AnimatedSection animation="fadeUp" className="text-center mb-24 md:mb-28" style={{ marginTop: "30px" }}>
             <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">Find Us</span>
-            <h2 className="mt-10 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none">
+            <h2 className="mt-10 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none" style={{ marginTop: "20px" }}>
               Our Location
             </h2>
-            <div className="mt-12 w-24 h-1 bg-[#D32F23] mx-auto" />
+       
           </AnimatedSection>
 
           <AnimatedSection animation="scaleUp">
-            <div className="relative w-full h-[500px] md:h-[600px] overflow-hidden border border-white/10">
+            <div className="relative w-full h-[500px] md:h-[600px] overflow-hidden border border-white/10" style={{ marginTop: "20px" }}>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.0!2d73.0879!3d33.6844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6789f3d5d8b33b08!2sI-8%20Markaz%2C%20Islamabad!5e0!3m2!1sen!2spk!4v1234567890"
                 width="100%"
@@ -349,15 +349,14 @@ export default function ContactPage() {
       ================================================================ */}
       <section className="w-full bg-black py-48 md:py-56">
         <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24">
-          <AnimatedSection animation="fadeUp" className="text-center mb-28 md:mb-32">
-            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">FAQ</span>
-            <h2 className="mt-10 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none">
+          <AnimatedSection animation="fadeUp" className="text-center mb-28 md:mb-32" style={{ marginTop: "30px" }}>
+            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-lg font-black">FAQ</span>
+            <h2 className="mt-10 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none" style={{ marginTop: "20px" }}>
               Common Questions
             </h2>
-            <div className="mt-12 w-24 h-1 bg-[#D32F23] mx-auto" />
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8" style={{ marginTop: "30px" }}>
             {[
               { q: "Do you accept walk-ins?", a: "Yes! Walk-ins are welcome on our rooftop. However, reservations are recommended on weekends and holidays for guaranteed seating." },
               { q: "Is parking available?", a: "Yes, complimentary valet parking is available at the I-8 Markaz entrance. Self-parking is also available nearby." },
@@ -368,8 +367,8 @@ export default function ContactPage() {
             ].map((faq, index) => (
               <AnimatedSection key={faq.q} animation="fadeUp" delay={index * 0.08}>
                 <div className="bg-[#0a0a0a] border border-white/10 p-8 sm:p-10 lg:p-12 hover:border-[#D32F23]/40 transition-colors duration-300 h-full">
-                  <h3 className="text-xl font-black text-white mb-6">{faq.q}</h3>
-                  <p className="text-gray-400 leading-[1.85] text-lg">{faq.a}</p>
+                  <h3 className="text-xl font-black text-white mb-6" style={{ marginLeft: "24px" }}>{faq.q}</h3>
+                  <p className="text-gray-400 leading-[1.85] text-lg" style={{ marginLeft: "24px" }}>{faq.a}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -392,14 +391,14 @@ export default function ContactPage() {
           <div className="absolute inset-0 bg-[#D32F23]/80" />
         </div>
         <div className="relative z-10 text-center px-8">
-          <AnimatedSection animation="scaleUp">
-            <h2 className="text-6xl lg:text-8xl xl:text-[120px] font-black text-white leading-none mb-20">
-              See You on<br />the Rooftop
+          <AnimatedSection animation="scaleUp" style={{ marginTop: "50px" }}>
+            <h2 className="text-5xl lg:text-7xl xl:text-[100px] font-black text-white leading-none mb-20">
+              See You on the Rooftop
             </h2>
             <a
               href="tel:+925112345678"
               className="inline-block px-16 sm:px-20 py-7 bg-black text-white text-lg sm:text-xl font-black uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-300"
-            >
+              style={{ marginTop: "30px" }}>
               Call Now
             </a>
           </AnimatedSection>

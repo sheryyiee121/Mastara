@@ -180,12 +180,12 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer ref={footerRef} className="w-full bg-[#050505] overflow-hidden">
+    <footer ref={footerRef} className="w-full bg-[#050505] overflow-hidden mb-5 pb-[10px]">
 
       {/* ════════════════════════════════════════
           HERO BANNER — Tall, dramatic, centered
       ════════════════════════════════════════ */}
-      <div ref={heroRef} className="relative w-full h-[650px] md:h-[750px] lg:h-[850px]">
+      <div ref={heroRef} className="relative w-full h-[760px] md:h-[860px] lg:h-[940px]">
         <Image
           src="https://images.pexels.com/photos/1579739/pexels-photo-1579739.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&dpr=1"
           alt="Mastara Footer"
@@ -194,7 +194,7 @@ export default function Footer() {
         />
         <div className="absolute inset-0 bg-black/80" />
         <div className="hero-overlay absolute inset-0 bg-[#D32F23] z-10" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center gap-8 md:gap-12 px-8 z-20">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center gap-6 md:gap-10 px-8 z-20">
           <p className="hero-tagline text-[#D32F23] uppercase tracking-[0.6em] text-[10px] sm:text-xs font-black">
             Rooftop Dining · Islamabad
           </p>
@@ -202,9 +202,9 @@ export default function Footer() {
             <Image
               src="/logo/Mastara__7___2_-removebg-preview.png"
               alt="Mastara"
-              width={450}
-              height={140}
-              className="h-24 sm:h-32 md:h-40 lg:h-48 xl:h-56 w-auto object-contain"
+              width={560}
+              height={200}
+              className="h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 w-auto object-contain"
             />
           </div>
           <p className="hero-desc text-gray-400 text-base sm:text-lg md:text-xl max-w-xl leading-relaxed mt-4">
@@ -217,7 +217,7 @@ export default function Footer() {
       {/* ════════════════════════════════════════
           NEWSLETTER — Full Hero Section with Background Image
       ════════════════════════════════════════ */}
-      <div ref={newsletterRef} className="relative w-full h-[600px] md:h-[700px] lg:h-[800px] overflow-hidden">
+      <div ref={newsletterRef} className="relative w-full h-[680px] md:h-[760px] lg:h-[840px] overflow-hidden">
         {/* Background Image */}
         <Image
           src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1"
@@ -277,19 +277,19 @@ export default function Footer() {
       ════════════════════════════════════════ */}
       <div ref={brandRef} className="w-full border-b border-white/[0.06]">
         <div className="max-w-[1400px] mx-auto px-8 sm:px-12 lg:px-20 py-28 md:py-36 lg:py-44">
-          <div className="flex flex-col lg:flex-row items-center lg:items-center justify-between gap-20 lg:gap-24">
+          <div className="flex flex-col lg:flex-row items-center lg:items-center justify-between gap-16 lg:gap-20">
 
-            <Link href="/" className="brand-logo inline-block shrink-0">
+            <Link href="/" className="brand-logo inline-block shrink-0 relative left-6 sm:left-8 lg:left-10">
               <Image
                 src="/logo/Mastara__7___2_-removebg-preview.png"
                 alt="Mastara"
-                width={240}
-                height={80}
-                className="h-16 sm:h-20 lg:h-24 xl:h-28 w-auto object-contain hover:opacity-80 transition-opacity duration-300"
+                width={360}
+                height={200}
+                className="h-44 sm:h-48 lg:h-42 xl:h-50 w-auto object-contain hover:opacity-80 transition-opacity duration-300"
               />
             </Link>
 
-            <p className="brand-text text-gray-500 text-base sm:text-lg lg:text-xl leading-[2] max-w-md text-center lg:text-left">
+            <p className="brand-text text-gray-500 text-base sm:text-lg lg:text-xl leading-[2] max-w-xl text-center lg:text-left">
               Serving the finest Pakistani, Chinese, and Continental cuisines
               on our rooftop in I-8 Markaz, Islamabad since 2010.
             </p>
@@ -300,7 +300,7 @@ export default function Footer() {
                   key={s.label}
                   href="#"
                   aria-label={s.label}
-                  className="social-icon w-16 h-16 sm:w-18 sm:h-18 lg:w-20 lg:h-20 rounded-full border-2 border-white/10 flex items-center justify-center text-gray-500 hover:border-[#D32F23] hover:bg-[#D32F23] hover:text-white hover:scale-110 hover:rotate-6 transition-all duration-300"
+                  className="social-icon w-16 h-16 sm:w-[4.5rem] sm:h-[4.5rem] lg:w-20 lg:h-20 rounded-full border-2 border-white/10 flex items-center justify-center text-gray-500 hover:border-[#D32F23] hover:bg-[#D32F23] hover:text-white hover:scale-110 hover:rotate-6 transition-all duration-300"
                 >
                   <svg className="w-6 h-6 sm:w-7 sm:h-7" fill="currentColor" viewBox="0 0 24 24">
                     <path d={s.path} />
@@ -319,15 +319,15 @@ export default function Footer() {
           Maximum whitespace, premium feel
       ════════════════════════════════════════ */}
       <div ref={linksRef} className="w-full">
-        <div className="max-w-[1400px] mx-auto px-8 sm:px-12 lg:px-20 py-32 md:py-44 lg:py-52">
+        <div className="max-w-[1400px] mx-auto px-8 sm:px-12 lg:px-20 py-32 md:py-40 lg:py-48">
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-20 sm:gap-24 xl:gap-16">
 
             {/* ── Explore ── */}
-            <div className="link-col">
+            <div className="link-col relative left-6 sm:left-8">
               <h4 className="link-heading text-[#D32F23] uppercase tracking-[0.4em] text-[11px] font-black pb-6 mb-12 border-b border-white/[0.06]">
                 Explore
               </h4>
-              <ul className="space-y-8">
+              <ul className="space-y-8 ml-4 sm:ml-6">
                 {[
                   { href: "/", label: "Home" },
                   { href: "/about", label: "About Us" },
@@ -404,17 +404,17 @@ export default function Footer() {
             </div>
 
             {/* ── Reservations ── */}
-            <div className="link-col">
+            <div className="link-col relative left-6 sm:left-8">
               <h4 className="link-heading text-[#D32F23] uppercase tracking-[0.4em] text-[11px] font-black pb-6 mb-12 border-b border-white/[0.06]">
                 Reservations
               </h4>
-              <p className="link-item text-gray-500 text-[15px] sm:text-base leading-[2] mb-16">
+              <p className="link-item text-gray-500 text-[15px] sm:text-base leading-[2] mb-16 ml-4 sm:ml-6">
                 Join us for an unforgettable rooftop dining experience in the
                 heart of Islamabad.
               </p>
               <Link
                 href="/contact"
-                className="link-item inline-flex items-center gap-4 text-white bg-[#D32F23] px-10 sm:px-12 py-6 sm:py-7 text-sm font-black uppercase tracking-[0.15em] hover:bg-[#B52419] hover:scale-105 hover:shadow-lg hover:shadow-[#D32F23]/30 transition-all duration-300"
+                className="link-item inline-flex items-center gap-4 text-white bg-[#D32F23] px-10 sm:px-12 py-6 sm:py-7 text-sm font-black uppercase tracking-[0.15em] hover:bg-[#B52419] hover:scale-105 hover:shadow-lg hover:shadow-[#D32F23]/30 transition-all duration-300 ml-4 sm:ml-6"
               >
                 Book a Table
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 shrink-0 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -431,9 +431,9 @@ export default function Footer() {
       {/* ════════════════════════════════════════
           BOTTOM BAR — Spaced out, elegant
       ════════════════════════════════════════ */}
-      <div className="bottom-bar w-full border-t border-white/[0.06]">
-        <div className="max-w-[1400px] mx-auto px-8 sm:px-12 lg:px-20 py-12 md:py-16">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-12">
+      <div className="bottom-bar w-full border-t border-white/[0.06] mb-[10px]" style={{ marginBottom: "30px" }}>
+        <div className="max-w-[1400px] mx-auto px-8 sm:px-12 lg:px-20 py-14 md:py-20">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10 relative left-6 sm:left-8">
             <p className="text-gray-600 text-sm">
               &copy; {new Date().getFullYear()} Mastara Restaurant — All Rights Reserved.
             </p>
@@ -453,3 +453,4 @@ export default function Footer() {
     </footer>
   );
 }
+
