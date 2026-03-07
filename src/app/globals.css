@@ -163,3 +163,13 @@ body {
 .marquee-container:hover .animate-marquee {
   animation-play-state: paused;
 }
+
+.navbar-logo-offset {
+  margin-left: 70px;
+}
+
+@media (max-width: 767px) {
+  .navbar-logo-offset {
+    margin-left: 0;
+  }
+}

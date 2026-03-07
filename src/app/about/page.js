@@ -98,13 +98,13 @@ export default function AboutPage() {
 
         <div className="relative z-10 text-center px-8 max-w-5xl mx-auto">
           <div ref={titleRef}>
-            <p className="text-[#D32F23] uppercase tracking-[0.5em] text-sm font-medium mb-8">
+            <p className="text-[#D32F23] uppercase tracking-[0.5em] text-md font-medium mb-10">
               Our Story
             </p>
-            <h1 className="text-[70px] sm:text-[100px] md:text-[140px] font-black text-white leading-none font-display uppercase tracking-wide">
+            <h1 className="text-[70px] sm:text-[100px] md:text-[140px] font-black text-white leading-none font-display uppercase tracking-wide" style={{marginTop: "10px"}}>
               About Us
             </h1>
-            <p className="mt-10 text-gray-300 text-xl sm:text-2xl max-w-3xl mx-auto leading-relaxed font-light">
+            <p className="mt-10 text-gray-300 text-xl sm:text-2xl max-w-3xl mx-auto leading-relaxed font-light" style={{ marginTop: "30px" }}>
               Mastara was created to redefine rooftop dining in Islamabad. Blending panoramic skyline views with refined flavors.
             </p>
           </div>
@@ -123,7 +123,7 @@ export default function AboutPage() {
           VISION & MISSION — Full-screen split image section
       ================================================================ */}
       <section className="w-full min-h-screen flex flex-col lg:flex-row">
-        <div className="relative w-full lg:w-1/2 h-[70vh] lg:h-auto overflow-hidden rounded-2xl sm:rounded-3xl">
+        <div className="relative w-full lg:w-1/2 h-[70vh] lg:h-auto overflow-hidden rounded-2xl sm:rounded-3xl" style={{ marginTop: "20px", marginLeft: "5px", marginRight: "10px" }}>
           <Image
             src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1280&h=1280&dpr=1"
             alt="Our Vision"
@@ -147,16 +147,16 @@ export default function AboutPage() {
         <div className="w-full lg:w-1/2 bg-[#0a0a0a] flex items-center">
           <div className="pl-14 sm:pl-20 lg:pl-24 xl:pl-28 pr-8 sm:pr-12 lg:pr-20 xl:pr-28 py-20 sm:py-28 lg:py-16">
             <AnimatedSection animation="fadeLeft">
-              <div className="space-y-24" style={{ marginLeft: "64px" }}>
+              <div className="space-y-24" style={{ marginLeft: "30px" }}>
                 <div>
-                  <div className="w-16 h-16 bg-[#D32F23] flex items-center justify-center mb-12">
+                  <div className="w-16 h-16 rounded-xl bg-[#D32F23] flex items-center justify-center mb-12">
                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                     </svg>
                   </div>
-                  <h3 className="text-3xl sm:text-4xl font-black text-white mb-6 sm:mb-7">Our Vision</h3>
-                  <div className="w-16 h-1 bg-[#D32F23] mb-8 sm:mb-10" />
+                  <h3 className="text-3xl sm:text-4xl font-black text-white mb-6 sm:mb-7" style={{marginTop: "10px"}}>Our Vision</h3>
+             
                   <p className="text-gray-400 text-lg sm:text-xl leading-relaxed sm:leading-[1.9]">
                     A space where elegance meets warmth. Every sunset, every plate, and every detail 
                     is designed to elevate ordinary evenings into unforgettable experiences.
@@ -164,13 +164,13 @@ export default function AboutPage() {
                 </div>
 
                 <div>
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-white flex items-center justify-center mb-10 sm:mb-12">
+                  <div className="w-14 h-14 rounded-xl sm:w-16 sm:h-16 bg-white flex items-center justify-center mb-10 sm:mb-12" style={{marginTop: "30px"}}>
                     <svg className="w-7 h-7 sm:w-8 sm:h-8 text-[#D32F23]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
-                  <h3 className="text-3xl sm:text-4xl font-black text-white mb-6 sm:mb-7">Our Mission</h3>
-                  <div className="w-16 h-1 bg-white mb-8 sm:mb-10" />
+                  <h3 className="text-3xl sm:text-4xl font-black text-white mb-6 sm:mb-7" style={{marginTop: "10px"}}>Our Mission</h3>
+                
                   <p className="text-gray-400 text-lg sm:text-xl leading-relaxed sm:leading-[1.9]">
                     To combine refined cuisine, warm hospitality, and a sophisticated ambiance to create 
                     elevated experiences above the city skyline for every guest who walks through our doors.
@@ -189,7 +189,7 @@ export default function AboutPage() {
       <section className="w-full bg-black py-48 md:py-56">
         <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24" style={{ marginTop: "60px" }}>
           <AnimatedSection animation="fadeUp" className="text-center mb-32 md:mb-40 flex flex-col items-center">
-            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">
+            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-sm font-black">
               The Visionaries
             </span>
             <h2 className="mt-10 text-4xl lg:text-6xl xl:text-7xl font-black text-white leading-none" style={{ marginTop: "30px" }}>
@@ -198,7 +198,7 @@ export default function AboutPage() {
          
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12" style={{ marginTop: "30px" }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12" style={{ marginTop: "30px" , marginLeft: "12px", marginRight: "10px" }}>
             {founders.map((founder, index) => (
               <AnimatedSection key={founder.name} animation={index % 2 === 0 ? "fadeLeft" : "fadeRight"}>
                 <div className="group relative overflow-hidden rounded-2xl sm:rounded-3xl border border-white/10 hover:border-[#D32F23]/40 transition-all duration-500 flex flex-col md:flex-row">
@@ -238,7 +238,7 @@ export default function AboutPage() {
       <section className="w-full bg-[#080808] py-48 md:py-56">
         <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24" style={{ marginTop: "60px" }}>
           <AnimatedSection animation="fadeUp" className="text-center mb-32 md:mb-40">
-            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">
+            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-sm font-black">
               The Experts
             </span>
             <h2 className="mt-10 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none"style={{ marginTop: "30px" }}>
@@ -252,7 +252,7 @@ export default function AboutPage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 lg:gap-6" style={{ marginTop: "30px" }}>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 lg:gap-6" style={{ marginTop: "30px", marginLeft: "15px", marginRight: "10px" }}>
             {teamMembers.map((member, index) => (
               <AnimatedSection key={member.name} animation="scaleUp" delay={index * 0.08}>
                 <div className="group relative overflow-hidden rounded-xl sm:rounded-2xl">
@@ -298,16 +298,15 @@ export default function AboutPage() {
 
         <div className="relative z-10 max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24">
           <AnimatedSection animation="fadeUp" className="text-center mb-32 md:mb-40" style={{ marginTop: "50px" }}>
-            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">
+            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-sm font-black">
               What Drives Us
             </span>
             <h2 className="mt-10 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none" style={{ marginTop: "30px" }}>
               Our Values
             </h2>
-            <div className="mt-12 w-24 h-1 bg-[#D32F23] mx-auto" style={{ marginTop: "30px" }}/>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8" >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8" style={{ marginTop: "30px" , marginLeft: "16px", marginRight: "12px" }} >
             {[
               {
                 icon: "♥",
@@ -331,7 +330,7 @@ export default function AboutPage() {
               },
             ].map((value, index) => (
               <AnimatedSection key={value.title} animation="fadeUp" delay={index * 0.1}>
-                <div className="group text-center p-10 sm:p-12 lg:p-14 border border-white/10 hover:border-[#D32F23]/50 hover:bg-[#D32F23]/5 transition-all duration-500">
+                <div className="group text-center p-10 sm:p-12 lg:p-14 border border-[#D32F23]/40 hover:border-[#D32F23] hover:bg-[#D32F23]/5 transition-all duration-500">
                   <div className="text-5xl text-[#D32F23] mb-10 group-hover:scale-110 transition-transform duration-300">
                     {value.icon}
                   </div>
@@ -349,15 +348,15 @@ export default function AboutPage() {
           FINAL CTA
       ================================================================ */}
       <section className="w-full bg-[#D32F23] py-48 md:py-56">
-        <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24 text-center" style={{ marginTop: "30px" }}>
+        <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24 text-center" style={{ marginTop: "50px" }}>
           <AnimatedSection animation="scaleUp">
-            <h2 className="text-5xl lg:text-7xl xl:text-[110px] font-black text-white leading-none mb-20" >
+            <h2 className="text-4xl lg:text-6xl xl:text-[100px] font-black text-white leading-none mb-20" >
               Come Dine With Us
             </h2>
             <a
               href="/contact"
               className="inline-block px-20 py-7 bg-black text-white text-xl font-black uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-300"
-               style={{marginTop: "30px"}}>
+               style={{marginTop: "40px"}}>
               Book a Table
             </a>
           </AnimatedSection>

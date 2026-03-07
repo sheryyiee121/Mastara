@@ -92,7 +92,7 @@ export default function Navbar() {
     >
       <div className="w-full max-w-[1400px] mx-auto px-6">
         <div className="flex items-center justify-between h-28 px-6 lg:px-16">
-          <Link href="/" ref={logoRef} className="inline-flex items-center group" style={{ marginLeft: "70px" }}>
+          <Link href="/" ref={logoRef} className="navbar-logo-offset inline-flex items-center group">
             <Image
               src="/logo/Mastara__7___2_-removebg-preview.png"
               alt="Mastara"

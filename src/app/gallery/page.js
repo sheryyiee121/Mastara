@@ -100,13 +100,13 @@ export default function GalleryPage() {
 
         <div className="relative z-10 text-center px-8 max-w-5xl mx-auto">
           <div ref={titleRef}>
-            <p className="text-[#D32F23] uppercase tracking-[0.5em] text-sm font-medium mb-8">
+            <p className="text-[#D32F23] uppercase tracking-[0.5em] text-md font-medium mb-8">
               Visual Experience
             </p>
-            <h1 className="text-[70px] sm:text-[100px] md:text-[140px] font-black text-white leading-none font-display uppercase tracking-wide">
+            <h1 className="text-[70px] sm:text-[100px] md:text-[140px] font-black text-white leading-none font-display uppercase tracking-wide" style={{marginTop: "10px"}}>
               Gallery
             </h1>
-            <p className="mt-10 text-gray-300 text-xl sm:text-2xl max-w-2xl mx-auto leading-relaxed font-light">
+            <p className="mt-10 text-gray-300 text-xl sm:text-2xl max-w-2xl mx-auto leading-relaxed font-light" style={{marginTop: "10px"}}>
               Experience Mastara through curated moments of cuisine, ambiance, and panoramic views
             </p>
           </div>
@@ -127,7 +127,7 @@ export default function GalleryPage() {
       <section className="w-full bg-black py-48 md:py-56">
         <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24" style={{ marginTop: "30px" }}>
           <AnimatedSection animation="fadeUp" className="text-center mb-32 md:mb-40">
-            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">
+            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-sm font-black">
               Explore Our Space
             </span>
             <h2 className="mt-10 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none" style={{ marginTop: "25px" }}>
@@ -135,7 +135,7 @@ export default function GalleryPage() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8" style={{ marginTop: "30px" }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8" style={{ marginTop: "30px", marginLeft: "12px", marginRight: "10px" }}>
             {tourSpaces.map((space, index) => (
               <AnimatedSection key={space.title} animation="scaleUp" delay={index * 0.1}>
                 <div
@@ -188,8 +188,8 @@ export default function GalleryPage() {
         </div>
 
         <div className="relative z-10 max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24">
-          <AnimatedSection animation="fadeUp" className="text-center mb-32 md:mb-40" style={{ marginTop: "30px" }}>
-            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black" >
+          <AnimatedSection animation="fadeUp" className="text-center mb-32 md:mb-40" style={{ marginTop: "40px" }}>
+            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-sm font-black" >
               The Atmosphere
             </span>
             <h2 className="mt-10 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none" style={{ marginTop: "25px" }}>
@@ -197,13 +197,13 @@ export default function GalleryPage() {
             </h2>
            
             <div className="mt-12 w-full flex justify-center">
-              <p className="text-gray-400 text-xl max-w-2xl text-center leading-[1.85]" style={{ textAlign: "center", width: "100%" }}>
+              <p className="text-gray-400 text-xl max-w-2xl text-center leading-[1.85]" style={{ textAlign: "center", width: "100%", marginTop: "10px" }}>
                 Immerse yourself in the warm, inviting atmosphere that makes Mastara truly special
               </p>
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-12 gap-4 md:gap-6">
+          <div className="grid grid-cols-12 gap-4 md:gap-6" style={{ marginTop: "30px", marginLeft: "12px", marginRight: "10px" }}>
             <AnimatedSection animation="scaleUp" delay={0} className="col-span-12 md:col-span-8 relative h-[560px] overflow-hidden rounded-2xl sm:rounded-3xl group cursor-pointer" onClick={() => setLightboxImage("https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg")}>
               <Image src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1280&h=900&dpr=1" alt="Ambiance 1" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/40 transition-all duration-500 flex items-center justify-center">
@@ -246,21 +246,21 @@ export default function GalleryPage() {
       <section className="w-full bg-[#080808] py-48 md:py-56">
         <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24" >
           <AnimatedSection animation="fadeUp" className="text-center mb-32 md:mb-40" style={{ marginTop: "50px" }}>
-            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black" >
+            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-sm font-black" >
               Trending Content
             </span>
             <h2 className="mt-10 text-6xl lg:text-7xl xl:text-8xl font-black text-white leading-none" style={{ marginTop: "30px" }}>
               Reels
             </h2>
        
-            <div className="mt-12 w-full flex justify-center">
+            <div className="mt-12 w-full flex justify-center" style={{ marginTop: "10px" }}>
               <p className="text-gray-400 text-xl max-w-2xl leading-[1.85] text-center" style={{ textAlign: "center", width: "100%" }}>
                 Our latest culinary creations and behind-the-scenes moments
               </p>
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6" style={{ marginTop: "30px" }}>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6" style={{ marginTop: "30px", marginLeft: "12px", marginRight: "10px" }}>
             {reels.map((reel, index) => (
               <AnimatedSection key={reel.title} animation="fadeUp" delay={index * 0.08}>
                 <div className="group relative cursor-pointer">
@@ -300,20 +300,20 @@ export default function GalleryPage() {
       <section className="w-full bg-black py-48 md:py-56">
         <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24">
           <AnimatedSection animation="fadeUp" className="text-center mb-24 md:mb-32" style={{ marginTop: "50px" }}>
-            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">
+            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-sm font-black">
               Our Visual Identity
             </span>
             <h2 className="mt-10 text-5xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none" style={{ marginTop: "30px" }}>
               Brand Identity
             </h2>
             <div className="mt-12 w-full flex justify-center">
-              <p className="text-gray-400 text-lg sm:text-xl max-w-2xl leading-relaxed text-center" style={{ textAlign: "center", width: "100%" }}>
+              <p className="text-gray-400 text-lg sm:text-xl max-w-2xl leading-relaxed text-center" style={{ textAlign: "center", width: "100%", marginTop: "15px" }}>
                 Our stationery embodies the brand&apos;s personality — consistency, elegance, and professionalism across all touchpoints
               </p>
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12" style={{ marginTop: "30px" }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12" style={{ marginTop: "40px", marginLeft: "15px", marginRight: "10px" }}>
             {brandImages.map((item, index) => (
               <AnimatedSection key={item.title} animation="scaleUp" delay={index * 0.15}>
                 <div 
@@ -355,7 +355,7 @@ export default function GalleryPage() {
       <section className="w-full bg-[#080808] py-48 md:py-56">
         <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24">
           <AnimatedSection animation="fadeUp" className="text-center mb-24" style={{ marginTop: "50px" }}>
-            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">
+            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-sm font-black">
               Captured Moments
             </span>
             <h2 className="mt-10 text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-none" style={{ marginTop: "30px" }}>
@@ -363,7 +363,7 @@ export default function GalleryPage() {
             </h2>
           </AnimatedSection>
 
-          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-5 mb-20" style={{ marginTop: "20px" }}>
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-5 mb-20" style={{ marginTop: "30px" }}>
             {["all", "food", "bbq", "interior", "brand"].map((filter) => (
               <button
                 key={filter}
@@ -379,7 +379,7 @@ export default function GalleryPage() {
             ))}
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6" style={{ marginTop: "30px" }}>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6" style={{ marginTop: "30px", marginLeft: "15px", marginRight: "10px" }}>
             {filteredImages.map((image, index) => (
               <AnimatedSection
                 key={`${image.src}-${index}`}

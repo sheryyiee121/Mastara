@@ -132,13 +132,13 @@ export default function MenuPage() {
 
         <div className="relative z-10 text-center px-8 max-w-5xl mx-auto">
           <div ref={titleRef}>
-            <p className="text-[#D32F23] uppercase tracking-[0.5em] text-sm font-medium mb-8">
+            <p className="text-[#D32F23] uppercase tracking-[0.5em] text-md font-medium mb-8">
               Culinary Excellence
             </p>
-            <h1 className="text-[70px] sm:text-[100px] md:text-[140px] font-black text-white leading-none font-display uppercase tracking-wide">
+            <h1 className="text-[70px] sm:text-[100px] md:text-[140px] font-black text-white leading-none font-display uppercase tracking-wide" style={{ marginTop: "20px" }}>
               Our Menu
             </h1>
-            <p className="mt-10 text-gray-300 text-xl sm:text-2xl max-w-2xl mx-auto leading-relaxed font-light">
+            <p className="mt-10 text-gray-300 text-xl sm:text-2xl max-w-2xl mx-auto leading-relaxed font-light" style={{ marginTop: "10px" }}>
               A diverse culinary experience with Desi, Thai, Chinese, Fast Food & Continental cuisines
             </p>
           </div>
@@ -163,7 +163,7 @@ export default function MenuPage() {
               <button
                 key={key}
                 onClick={() => setActiveCategory(key)}
-                className={`px-6 sm:px-10 py-3 sm:py-4 text-xs sm:text-sm font-black uppercase tracking-[0.1em] sm:tracking-[0.15em] transition-all duration-300 ${
+                className={`rounded-lg px-6 sm:px-10 py-3 sm:py-4 text-xs sm:text-sm font-black uppercase tracking-[0.1em] sm:tracking-[0.15em] transition-all duration-300 ${
                   activeCategory === key
                     ? "bg-[#D32F23] text-white"
                     : "text-white/60 hover:text-white border border-white/10 hover:border-white/30"
@@ -181,17 +181,16 @@ export default function MenuPage() {
           MENU ITEMS SECTION
       ================================================================ */}
       <section className="w-full bg-[#080808] py-40 md:py-48">
-        <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24" style={{ marginTop: "20px" }}>
+        <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24" style={{ marginTop: "20px"}}>
           <AnimatedSection animation="fadeUp" className="mb-24 md:mb-28">
             <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-10">
-              <div className="relative left-6 sm:left-8 lg:left-10"> 
+              <div className="relative left-2 sm:left-2 lg:left-4"> 
                 <span className="block text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black" style={{ marginTop: "30px" }}>
                   {currentMenu.tagline}
                 </span>
                 <h2 className="mt-5 text-5xl lg:text-6xl xl:text-7xl font-black text-white">
                   {currentMenu.name}
                 </h2>
-                <div className="mt-8 w-20 h-1 bg-[#D32F23]" />
               </div>
               <div className="flex flex-wrap items-center gap-6 lg:gap-8 text-sm" >
                 <div className="flex items-center gap-3 text-gray-400" >
@@ -214,7 +213,7 @@ export default function MenuPage() {
             </div>
           </AnimatedSection>
 
-          <div ref={menuRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8" style={{ marginTop: "20px" }}>
+          <div ref={menuRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8" style={{ marginTop: "20px" , marginLeft: "16px", marginRight: "12px" }}>
             {currentMenu.items.map((item) => (
               <div
                 key={item.name}
@@ -265,7 +264,7 @@ export default function MenuPage() {
         </div>
 
         <div className="relative z-10 max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24">
-          <AnimatedSection animation="fadeUp" className="text-center mb-28 md:mb-32" style={{ marginTop: "30px" }}>
+          <AnimatedSection animation="fadeUp" className="text-center mb-28 md:mb-32" style={{ marginTop: "40px" }}>
             <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">
               Good to Know
             </span>
@@ -274,7 +273,7 @@ export default function MenuPage() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10" style={{ marginTop: "30px" }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10" style={{ marginTop: "50px", marginLeft: "15px", marginRight: "10px" }}>
             {[
               {
                 title: "100% Halal",
@@ -293,7 +292,7 @@ export default function MenuPage() {
               },
             ].map((opt, i) => (
               <AnimatedSection key={opt.title} animation="fadeUp" delay={i * 0.12}>
-                <div className="group text-center p-10 sm:p-12 lg:p-14 border border-white/10 hover:border-[#D32F23]/50 hover:bg-[#D32F23]/5 transition-all duration-500">
+                <div className="group text-center p-10 sm:p-12 lg:p-14 border border-[#D32F23]/50 hover:border-[#D32F23] hover:bg-[#D32F23]/5 transition-all duration-500">
                   <div className="w-20 h-20 bg-[#D32F23]/20 group-hover:bg-[#D32F23] rounded-full flex items-center justify-center mx-auto mb-12 transition-all duration-300">
                     <span className="text-[#D32F23] group-hover:text-white text-3xl font-black transition-colors duration-300">{opt.icon}</span>
                   </div>
@@ -313,11 +312,11 @@ export default function MenuPage() {
       <section className="w-full bg-[#D32F23] py-48 md:py-56">
         <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24 text-center">
           <AnimatedSection animation="scaleUp">
-            <h2 className="text-6xl lg:text-8xl xl:text-[100px] font-black text-white leading-none mb-20" style={{ marginTop: "30px" }}>
+            <h2 className="text-6xl lg:text-8xl xl:text-[100px] font-black text-white leading-none mb-20" style={{ marginTop: "40px" }}>
               Can&apos;t Decide?
             </h2>
             <div className="w-full flex justify-center mb-20">
-              <p className="text-white/80 text-xl sm:text-2xl max-w-3xl leading-[1.85] text-center" style={{ textAlign: "center", width: "100%" }}>
+              <p className="text-white/80 text-xl sm:text-2xl max-w-3xl leading-[1.85] text-center" style={{ textAlign: "center", width: "100%", marginTop: "10px" }}>
                 Let our expert chefs craft a custom menu for your private event or party.
                 Experience the best of Pakistani hospitality.
               </p>
@@ -325,7 +324,7 @@ export default function MenuPage() {
             <a
               href="/contact"
               className="inline-block px-16 sm:px-20 py-7 bg-black text-white text-lg sm:text-xl font-black uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-300"
-              style={{ marginTop: "20px" }}>
+              style={{ marginTop: "40px" }}>
               Request Custom Menu
             </a>
           </AnimatedSection>

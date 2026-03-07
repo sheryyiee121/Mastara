@@ -47,13 +47,13 @@ export default function Home() {
 
         <div className="relative z-10 text-center px-8 w-full max-w-5xl mx-auto">
           <div ref={titleRef}>
-            <p className="text-[#D32F23] uppercase tracking-[0.5em] text-sm font-bold mb-10">
+            <p className="text-[#D32F23] uppercase tracking-[0.5em] text-m font-bold mb-10">
               Rooftop Dining · Islamabad
             </p>
             <h1 className="text-[80px] sm:text-[120px] md:text-[160px] font-black text-white leading-none font-display uppercase tracking-wide">
               Mastara
             </h1>
-            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-8 text-white/50 text-base sm:text-lg font-light tracking-[0.2em] uppercase">
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-12 text-white/80 text-base sm:text-lg font-light tracking-[0.2em] uppercase" style={{ marginTop: "10px" }}>
               <span>Desi</span>
               <span className="w-1.5 h-1.5 bg-[#D32F23] rounded-full" />
               <span>Thai</span>
@@ -68,21 +68,21 @@ export default function Home() {
 
           <p
             ref={subtitleRef}
-            className="mt-14 text-gray-300 text-xl sm:text-2xl mx-auto leading-loose font-light text-center"
+            className="mt-14 text-gray-300 text-xl sm:text-2xl mx-auto leading-loose font-light text-center" style={{ marginTop: "10px" }}
           >
             Where elegance meets warmth. Every sunset, every plate, every detail is designed to elevate ordinary evenings into unforgettable experiences.
           </p>
 
-          <div ref={ctaRef} className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-6">
+          <div ref={ctaRef} className="mt-5 flex flex-col items-center justify-center gap-6 sm:flex-row" style={{ marginTop: "20px" }}>
             <Link
               href="/menu"
-              className="px-14 py-5 bg-[#D32F23] text-white text-sm font-black uppercase tracking-[0.25em] hover:bg-[#B52419] transition-all duration-300 min-w-[210px] text-center"
+              className="inline-flex min-w-[210px] items-center justify-center rounded-lg bg-[#D32F23] px-14 py-10 text-center text-sm font-black uppercase tracking-[0.25em] text-white transition-all duration-300 hover:bg-[#B52419] sm:px-16 sm:py-10"
             >
               Explore Menu
             </Link>
             <Link
               href="/contact"
-              className="px-14 py-5 border border-white/30 text-white text-sm font-black uppercase tracking-[0.25em] hover:border-white hover:bg-white/10 transition-all duration-300 min-w-[210px] text-center"
+              className="inline-flex min-w-[210px] items-center justify-center rounded-lg border border-white/30 px-14 py-10 text-center text-sm font-black uppercase tracking-[0.25em] text-white transition-all duration-300 hover:border-white hover:bg-white/10 sm:px-16 sm:py-10"
             >
               Book a Table
             </Link>
@@ -130,7 +130,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-20 xl:gap-28">
 
             {/* Image — left side with rounded corners */}
-            <div className="relative w-full lg:w-1/2 shrink-0 lg:self-start" style={{ marginTop: "20px" }}> 
+            <div className="relative w-full lg:w-1/2 shrink-0 lg:self-start" style={{ marginTop: "20px", marginLeft: "24px", marginRight: "18px" }}> 
               <div className="relative aspect-[4/3] lg:aspect-square overflow-hidden rounded-3xl lg:rounded-[2.5rem]">
                 <Image
                   src="https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=1280&h=1280&dpr=1"
@@ -143,18 +143,16 @@ export default function Home() {
             </div>
 
             {/* Text — right side with proper spacing */}
-            <div className="w-full lg:w-1/2 shrink-0">
+            <div className="w-full lg:w-1/2 shrink-0 !pl-6 sm:!pl-10 md:!pl-12 lg:!pl-0">
               <div className="max-w-xl">
             <AnimatedSection animation="fadeLeft">
-              <span className="text-[#D32F23] uppercase tracking-[0.4em] text-xs font-black">
+              <span className="text-[#D32F23] uppercase tracking-[0.4em] text-sm font-black">
                 About Mastara
               </span>
 
               <h2 className="mt-8 sm:mt-10 text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
-                Elevated<br />Dining Above<br />The Skyline
+                Elevated Dining Above The Skyline
               </h2>
-
-              <div className="mt-10 sm:mt-12 w-16 h-1 bg-[#D32F23]" />
 
               <p className="mt-10 sm:mt-14 text-gray-400 text-base sm:text-lg leading-relaxed sm:leading-[2]">
                 Mastara is a rooftop restaurant in Islamabad crafted for those who appreciate
@@ -169,7 +167,7 @@ export default function Home() {
 
               <Link
                 href="/about"
-                className="inline-flex items-center gap-4 mt-12 sm:mt-16 group"
+                className="inline-flex items-center gap-4 mt-5 sm:mt-6 group"
               >
                 <span className="text-white text-sm font-black uppercase tracking-[0.2em] border-b border-white/20 group-hover:border-[#D32F23] group-hover:text-[#D32F23] transition-all duration-300 pb-1.5">
                   Our Story
@@ -191,19 +189,22 @@ export default function Home() {
           CUISINES — 4 tall cards on solid black
       ══════════════════════════════════════════════════════ */}
       <section className="w-full bg-black py-48 md:py-56">
-        <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24" style={{ marginTop: "60px" }}>
+        <div className="max-w-[1600px] mx-auto px-0" style={{ marginTop: "60px" }}>
 
           <AnimatedSection animation="fadeUp" className="text-center mb-32 md:mb-40">
-            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">
+            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-sm font-black">
               Our Specialties
             </span>
-            <h2 className="text-4xl lg:text-8xl font-black text-white leading-none" style={{ marginTop: "20px" }}>
+            <h2 className="text-4xl lg:text-7xl font-black text-white leading-none" style={{ marginTop: "20px" }}>
               Explore Our Menu
             </h2>
             
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8" style={{ marginTop: "50px" }}>
+          <div
+            className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8"
+            style={{ marginLeft: "22px", marginRight: "20px", marginTop: "30px" }}
+          >
             {[
               { name: "Desi", tagline: "Authentic Pakistani Flavors", desc: "Karahi, Biryani, Nihari, Haleem — the heart of Pakistan on a plate.", image: "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=1280&h=900&dpr=1" },
               { name: "Thai", tagline: "Spicy Thai Delights", desc: "Pad Thai, Tom Yum, Green Curry — authentic Thai flavors with a kick.", image: "https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=1280&h=900&dpr=1" },
@@ -253,12 +254,12 @@ export default function Home() {
 
         <div className="relative z-10 w-full max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24">
           <AnimatedSection animation="fadeUp" className="text-center mb-24 md:mb-32">
-            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">By the Numbers</span>
-            <h2 className="mt-8 text-5xl lg:text-6xl font-black text-white">
+            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-sm font-black">By the Numbers</span>
+            <h2 className="mt-8 text-6xl lg:text-7xl font-black text-white">
               Mastara at a Glance
             </h2>
           </AnimatedSection>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-20 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-20 text-center" style={{ marginTop: "20px" }}>
             {[
               { number: "15+", label: "Years of Service" },
               { number: "50+", label: "Expert Chefs" },
@@ -269,8 +270,8 @@ export default function Home() {
                 <div className="text-[70px] sm:text-[80px] lg:text-[100px] font-black text-[#D32F23] leading-none">
                   {s.number}
                 </div>
-                <div className="mt-8 w-10 h-px bg-[#D32F23]/50 mx-auto mb-5" />
-                <div className="text-white uppercase tracking-[0.2em] text-sm font-medium">
+             
+                <div className="text-white uppercase tracking-[0.2em] text-sm font-medium" style={{ marginTop: "10px" }}>
                   {s.label}
                 </div>
               </AnimatedSection>
@@ -286,18 +287,16 @@ export default function Home() {
       <section className="w-full flex flex-col-reverse lg:flex-row min-h-screen">
 
         {/* Text — left half, fully opaque solid bg with clear separation */}
-        <div className="w-full lg:w-1/2 shrink-0 bg-black flex items-center justify-end py-16 sm:py-24 lg:py-0">
-          <div className="px-8 sm:px-12 md:px-16 lg:px-14 xl:px-20 py-8 sm:py-10 lg:py-20 w-full max-w-2xl mx-auto lg:mx-0 lg:ml-auto">
+        <div className="w-full lg:w-1/2 shrink-0 bg-black flex items-center justify-end py-16 sm:py-24 lg:py-0 !pl-10 sm:!pl-14 md:!pl-16 lg:!pl-0">
+          <div className="px-8 sm:px-12 md:px-16 lg:px-14 xl:px-20 py-8 sm:py-10 lg:py-20 w-full max-w-2xl">
             <AnimatedSection animation="fadeRight">
-              <span className="text-[#D32F23] uppercase tracking-[0.4em] text-xs font-black">
+              <span className="text-[#D32F23] uppercase tracking-[0.2em] text-sm font-black">
                 The Experience
               </span>
 
               <h2 className="mt-8 sm:mt-10 text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
-                More Than<br />Just a Meal
+                More Than Just <br /> a Meal
               </h2>
-
-              <div className="mt-10 sm:mt-12 w-16 h-1 bg-[#D32F23]" />
 
               <p className="mt-10 sm:mt-14 text-gray-400 text-base sm:text-lg leading-relaxed sm:leading-[2]">
                 At Mastara, we&apos;ve crafted an atmosphere where families gather,
@@ -320,19 +319,19 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-
+              
               <Link
                 href="/contact"
-                className="inline-block mt-14 sm:mt-20 px-10 sm:px-12 py-4 sm:py-5 bg-[#D32F23] text-white font-black text-sm uppercase tracking-[0.25em] hover:bg-[#B52419] transition-all duration-300"
-              >
+                className="inline-block mt-5 bg-[#D32F23] px-12 py-6 text-sm font-black uppercase tracking-[0.25em] text-white transition-all duration-300 hover:bg-[#B52419] sm:px-14 sm:py-7">
                 Reserve a Table
               </Link>
+
             </AnimatedSection>
           </div>
         </div>
 
         {/* Image — right half */}
-        <div className="relative w-full lg:w-1/2 h-[60vh] sm:h-[70vh] lg:h-auto shrink-0 overflow-hidden rounded-2xl sm:rounded-3xl" style={{ marginTop: "20px" }}>
+        <div className="relative w-full lg:w-1/2 h-[60vh] sm:h-[70vh] lg:h-auto shrink-0 overflow-hidden rounded-2xl sm:rounded-3xl" style={{ marginTop: "20px", marginLeft: "4px"}}>
           <Image
             src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1280&h=1280&dpr=1"
             alt="Dining Experience"
@@ -351,16 +350,15 @@ export default function Home() {
         <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-24" style={{ marginTop: "80px" }}>
 
           <AnimatedSection animation="fadeUp" className="text-center mb-32 md:mb-40">
-            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-xs font-black">
+            <span className="text-[#D32F23] uppercase tracking-[0.35em] text-sm font-black">
               Gallery
             </span>
             <h2 className="text-4xl lg:text-8xl font-black text-white leading-none" style={{ marginTop: "20px" }} >
               See Our World
             </h2>
-            <div className="mt-12 w-24 h-1 bg-[#D32F23] mx-auto" style={{ marginTop: "50px" }}/>
           </AnimatedSection>
 
-          <div className="grid grid-cols-12 gap-4 md:gap-6">
+          <div className="grid grid-cols-12 gap-4 md:gap-6" style={{ marginTop: "50px", marginLeft: "20px", marginRight: "18px" }}>
             <AnimatedSection animation="scaleUp" delay={0.0} className="col-span-12 md:col-span-7 relative h-[480px] overflow-hidden rounded-2xl sm:rounded-3xl group">
               <Image src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1280&h=900&dpr=1" alt="Gallery 1" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-500" />
@@ -422,16 +420,16 @@ export default function Home() {
 
         <div className="relative z-10 text-center px-8 w-full max-w-5xl mx-auto">
           <AnimatedSection animation="scaleUp">
-            <p className="text-white/60 uppercase tracking-[0.45em] text-xs font-bold mb-14">
+            <p className="text-white/60 uppercase tracking-[0.45em] text-md font-bold mb-14">
               Reservations Open
             </p>
-            <h2 className="text-[70px] sm:text-[100px] md:text-[130px] font-black text-white leading-none mb-20">
-              Book Your<br />Table Now
+            <h2 className="text-[70px] sm:text-[100px] md:text-[120px] font-black text-white leading-none mb-20" style={{ marginTop: "20px" }}>
+              Book Your Table Now
             </h2>
             <Link
               href="/contact"
               className="inline-block px-20 py-7 bg-[#D32F23] text-white text-lg font-black uppercase tracking-[0.25em] hover:bg-[#B52419] transition-all duration-300"
-            >
+              style={{ marginTop: "30px" }}>
               Reserve Tonight
             </Link>
           </AnimatedSection>
