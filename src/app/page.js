@@ -287,8 +287,8 @@ export default function Home() {
       <section className="w-full flex flex-col-reverse lg:flex-row min-h-screen">
 
         {/* Text — left half, fully opaque solid bg with clear separation */}
-        <div className="w-full lg:w-1/2 shrink-0 bg-black flex items-center justify-end py-16 sm:py-24 lg:py-0 !pl-10 sm:!pl-14 md:!pl-16 lg:!pl-0">
-          <div className="px-8 sm:px-12 md:px-16 lg:px-14 xl:px-20 py-8 sm:py-10 lg:py-20 w-full max-w-2xl">
+        <div className="w-full lg:w-1/2 shrink-0 bg-black flex items-center justify-end py-16 sm:py-24 lg:py-0 !pl-6 sm:!pl-10 md:!pl-12 lg:!pl-0">
+          <div className="px-8 sm:px-12 md:px-16 lg:px-14 xl:px-20 py-8 sm:py-10 lg:py-20 w-full max-w-2xl" style={{marginTop: "20px"}}>
             <AnimatedSection animation="fadeRight">
               <span className="text-[#D32F23] uppercase tracking-[0.2em] text-sm font-black">
                 The Experience
@@ -322,7 +322,7 @@ export default function Home() {
               
               <Link
                 href="/contact"
-                className="inline-block mt-5 bg-[#D32F23] px-12 py-6 text-sm font-black uppercase tracking-[0.25em] text-white transition-all duration-300 hover:bg-[#B52419] sm:px-14 sm:py-7">
+                className="inline-block mt-5 bg-[#D32F23] px-12 py-6 text-sm font-black uppercase tracking-[0.25em] text-white transition-all duration-300 hover:bg-[#B52419] sm:px-14 sm:py-7" style={{marginTop: "20px"}}>
                 Reserve a Table
               </Link>
 
